@@ -7,26 +7,19 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
-<body>
-    
-    <!--Search bar and buttons-->
+<body>   
     <div id="Nav">
-        <div id="Name">
-            <h1>Some App</h1>
-        </div>
-        <div id="Options">
-            <h2>Movie Search</h2>
-            <form id ="movieBar">
-                <input type="text" id="searchText" placeholder="Enter the name of a movie...">
-            </form>
-            <a onclick="getRandom('')" class="btn btn-primary" href="#">Random Movie</a>
-            <a href="watchlist.html">Watch List</a>
-        </div>
+        <h2>Movie Search</h2>
+        <form id ="movieBar">
+            <input type="text" id="searchText" placeholder="Enter the name of a movie...">
+        </form>
+        <a onclick="getRandom('')" class="btn btn-primary" href="#">Random Movie</a>
+        <a href="watchlist.html">Watch List</a>
     </div>
-
+    
     <!--Movie display-->
     <div id="Main">
-        <div id="Movies" class="row">
+        <div id="List" class="well">
 
         </div>
     </div>
@@ -39,6 +32,7 @@
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
   <script src="main.js"></script>
+  <script>generateList();</script>
 </body>
 
 </html>
