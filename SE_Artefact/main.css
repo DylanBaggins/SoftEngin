@@ -46,3 +46,25 @@ body {
     overflow-y: auto;
 }
 
+<<<<<<< HEAD
+=======
+#Top {
+    background-color: gray;
+}
+
+#movies img, #movie img {
+    width: 100%;
+}
+
+@media(min-width: 960px) {
+
+    #movies .col-md-3 .well {
+        height: 390px;
+    }
+
+    #movies .col-md-3 img {
+        height: 240px;
+    }
+
+}
+>>>>>>> 98792984ab70b071697a82b6c3ffbe3943635fd0

@@ -31,6 +31,7 @@ function getMovies(searchText) {
     });
 }
 
+<<<<<<< HEAD
 function getRandom() {
     
     var ranID = Math.floor(Math.random() * 10000000);
@@ -56,6 +57,8 @@ function getRandom() {
     });
 }
 
+=======
+>>>>>>> 98792984ab70b071697a82b6c3ffbe3943635fd0
 function movieSelector(id) {
     sessionStorage.setItem('movieId', id);
     window.location = 'movie.html';
@@ -92,7 +95,10 @@ function getMovie() {
                 <div class="well">
                     <h3>Plot</h3>
                     ${movie.Plot}
+<<<<<<< HEAD
                     <a onclick="saveMovie('${movie.imdbID}')" class="btn btn-primary" href="#">Save Movie</a>
+=======
+>>>>>>> 98792984ab70b071697a82b6c3ffbe3943635fd0
                     <hr>
                     <a href="http://imdb.com/title/${movie.imdbID}" target="blank" class="btn btn-primary">View IMDb</a> 
                     <a href="main.html" class="btn btn-default">Back to Search</a>
@@ -105,6 +111,7 @@ function getMovie() {
     .catch((err) => {
         console.log(err);
     });
+<<<<<<< HEAD
 }
 
 let WatchList = localStorage.getItem("moviesL") ? JSON.parse(localStorage.getItem("moviesL")) : [];
@@ -184,4 +191,6 @@ function getWatchList(id) {
             console.log(err);
         });
     }   
+=======
+>>>>>>> 98792984ab70b071697a82b6c3ffbe3943635fd0
 }
