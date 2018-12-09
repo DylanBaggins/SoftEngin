@@ -8,37 +8,36 @@
 </head>
 
 <body>
-    
+
     <!--Search bar and buttons-->
     <div id="Nav">
         <div id="Name">
-            <h1>Some App</h1>
+            <h1>ADHH Movies</h1>
         </div>
         <div id="Options">
             <h2>Movie Search</h2>
-            <form id ="movieBar">
+            <form id="movieBar">
                 <input type="text" id="searchText" placeholder="Enter the name of a movie...">
             </form>
-            <a onclick="getRandom('')" class="btn btn-primary" href="#">Random Movie</a>
-            <a href="watchlist.html">Watch List</a>
+            <a class="navBut" onclick="getRandom('')" href="#">Random Movie</a>
+            <a class="navBut" onclick="setAPI('')" href="#">Switch API</a>
+            <a class="navBut" onclick="generateList()" href="#">Watch List</a>
         </div>
     </div>
 
     <!--Movie display-->
     <div id="Main">
-        <div id="Movies" class="row">
+        <div id="Movies">
 
         </div>
     </div>
 
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-  <script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

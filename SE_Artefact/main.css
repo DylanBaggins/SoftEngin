@@ -21,50 +21,76 @@ body {
 
 #Nav {
     flex: 30%;
-    background-color: #aaa;
+    background-color: #555555;
 }
 
 #Name {
     height: 100px;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #ef8a01;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
 }
 
 #Options {
     padding: 20px;
     width: 100%;
+    text-align: center;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+a:link, a:visited {
+    background-color: #ef8a01;
+    color: #000;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 4px;
+}
+  
+  
+a:hover, a:active {
+    background-color: #d67d00;
 }
 
 #Main {
     flex: 70%;
-    background-color: aquamarine;
+    background-color: #0e9c6d;
     padding: 20px;
     overflow-y: auto;
+    -webkit-box-shadow: inset 10px 0px 12px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 10px 0px 12px -2px rgba(0,0,0,0.75);
+    box-shadow: inset 10px 0px 12px -2px rgba(0,0,0,0.75);
 }
 
-<<<<<<< HEAD
-=======
-#Top {
-    background-color: gray;
+.movHold {
+    display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr 1fr;
+  grid-template-rows: 5fr 1fr 1fr;
+  grid-template-areas: "posterHold infoHold infoHold infoHold" "buttonHold buttonHold buttonHold buttonHold" "buttonHold buttonHold buttonHold buttonHold";
 }
 
-#movies img, #movie img {
-    width: 100%;
+.posterHold {
+    grid-area: posterHold;
 }
 
-@media(min-width: 960px) {
-
-    #movies .col-md-3 .well {
-        height: 390px;
-    }
-
-    #movies .col-md-3 img {
-        height: 240px;
-    }
-
+.infoHold {
+    grid-area: infoHold;
 }
->>>>>>> 98792984ab70b071697a82b6c3ffbe3943635fd0
+
+.buttonHold {
+    grid-area: buttonHold;
+}
